@@ -1,0 +1,28 @@
+
+<html>
+	
+
+<head>
+		<title> c o m p a n h i a </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="css/padrao01.css" rel="stylesheet" type="text/css">		
+		<script>
+			function abrirJanela()
+			{
+				largura = window.screen.availWidth - 10;
+				altura = window.screen.availHeight - 30;
+				var janRevista = window.open("index_corpo.html","site","top=0,left=0,width=" + largura + ",height=" + altura);				
+				janRevista.focus();
+			}
+		</script>
+	</head>
+	<body scroll="no" leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0">		
+		<table border="0" width="100%" height="100%">
+			<tr>				
+				<td valign="bottom" align="right"><img src="imgs/EntradaMaoOut.gif" border="0" alt="[Clique para entrar]" style="cursor: hand;" onmousemove="javascript: this.src = 'imgs/index.html\\EntradaMao.gif';" onmouseout="javascript: this.src = 'imgs/index.html\\EntradaMaoOut.gif';" onclick="javascript: abrirJanela();"></td>
+			</tr>
+		</table>
+	</body>
+
+
+</html>

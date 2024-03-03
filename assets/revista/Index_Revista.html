@@ -1,0 +1,303 @@
+
+<HTML>
+	
+
+<HEAD>
+		<title>c o m p a n h i a </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="css/padrao01.css" rel="stylesheet" type="text/css">
+			<script language="javascript" src="js/animate.js"></script>
+			<script language="javascript">		
+			var iCont = 0;                               
+			
+			function NavegarPagina(orientacao) 
+			{   				
+				var objSlide = new animation("divImagens");
+				
+				var iValorMais = 201;
+				var iValorMenos = -201
+
+				if((iCont==-6) || (iCont==-15) || (iCont==-21) || (iCont==-30) || (iCont==-36))
+				{
+					iValorMais = 197;
+					iValorMenos = -197;
+				}
+				else
+				{
+					iValorMais = 201;
+					iValorMenos = -201;
+				}
+
+				window.status = iCont;	
+
+				if(orientacao==1)                                
+				{
+					objSlide.slideBy(iValorMais, 0, 10, 10, "");
+					iCont++;
+				}
+				else
+				{
+					objSlide.slideBy(iValorMenos, 0, 10, 10, "");
+					iCont--;
+				}
+				
+				if(iCont==0)
+					btnAvancar.style.visibility = "hidden";
+				else
+					btnAvancar.style.visibility = "visible";
+					
+				if(iCont==-42)
+					btnVoltar.style.visibility = "hidden";
+				else
+					btnVoltar.style.visibility = "visible";					
+			}
+			
+			function onAbreAmpliacao(pagina)
+			{
+				largura = window.screen.availWidth - 10;
+				altura = window.screen.availHeight - 30;
+				var janAmpliacao = window.open("revista9198.html?sPaginaAtual=" + pagina,"ampliacao","top=0,left=0,width=" + largura + ",height=" + altura);				
+				janAmpliacao.focus();
+			}
+			</script>
+	</HEAD>
+	<body leftmargin="5" topmargin="0" bgcolor="#000000" scroll="no">
+		<br>
+		<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/titRevista.gif"
+			border="0">
+		<br>
+		<br>
+		<div id="divImagens" name="divImagens" style="LEFT: 0px; POSITION: relative; TOP: 0px">
+			<table border="0" bordercolor="#666666" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(0);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina00.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Capa</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(1);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina01.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 1</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(2);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina02.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 2</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(3);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina04.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 4</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(4);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina05.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 5</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(5);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina06.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 6</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(6);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina09.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 9</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(7);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina10.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 10</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(8);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina11.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 11</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(9);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina12.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 12</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(10);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina13.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 13</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(11);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina14.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 14</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(12);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina15.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 15</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(13);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina16.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 16</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(14);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina17.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 17</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(15);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina20.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 20</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(16);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina21.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 21</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(17);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina22.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 22</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(18);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina24.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 24</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(19);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina25.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 25</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(20);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina26.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 26</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(21);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina27.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 27</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(22);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina28.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 28</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(23);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina29.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 29</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(24);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina30.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 30</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(25);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina31.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 31</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(26);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina32.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 32</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(27);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina33.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 33</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(28);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina35.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 35</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(29);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina36.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 36</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(30);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina37.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 37</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(31);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina38.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 38</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(32);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina39.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 39</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(33);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina40.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 40</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(34);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina41.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 41</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(35);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina42.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 42</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(36);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina43.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 43</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(37);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina44.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 44</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(38);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina46.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 46</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(39);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina47.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 47</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(40);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina49.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 49</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(41);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina50.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 50</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(42);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina51.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Pág. 51</font>
+					</td>
+					<td align="center" valign="middle" onclick="onAbreAmpliacao(43);">
+						<img alt="Clique para ampliar" style="CURSOR:url('cursor/sizewe.ani')" src="imgs/pagina52.gif"
+							border="0"><br>
+						<font class="TextoConteudo">Verso</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+		<input type="button" class="BotaoNavegacao" onclick="javascript: NavegarPagina(0);" value="<<"
+			id="btnVoltar"> <input type="button" class="BotaoNavegacao" onclick="javascript: NavegarPagina(1);" value=">>"
+			style="VISIBILITY: hidden" id="btnAvancar">
+	</body>
+
+
+</HTML>

@@ -1,0 +1,104 @@
+body 
+{ 
+	scrollbar-face-color: #f0f0f0; 
+	scrollbar-highlight-color: #a0a0a0; 
+	scrollbar-shadow-color: #ffffff; 
+	scrollbar-3dlight-color: #ffffff; 
+	scrollbar-arrow-color: #a0a0a0; 
+	scrollbar-track-color: #f0f0f0; 
+	scrollbar-darkshadow-color: #a0a0a0; 
+	scrollbar-base-color: #ffffff 
+}
+
+a:link 
+{
+	color: silver;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	color: silver;
+	text-decoration: none;
+}
+
+a:hover 
+{
+	color: silver;
+	text-decoration: underline;
+}
+
+a:active 
+{
+	color: silver;
+	text-decoration: underline;
+}
+
+.Texto
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;	
+	color: silver;	
+	line-height: 30px;	
+}
+
+.TextoZoom
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;	
+	color: #666666;	
+	line-height: 30px;	
+}
+
+.TextoBioData
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;	
+	color: silver;		
+}
+
+.TextoConteudo
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;	
+	color: silver;		
+}
+
+.TextoCreativeCommons
+{
+	font-family: Arial;
+	font-size: 9px;	
+	color: #f0f0f0;		
+}
+
+.TextoPagina
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #ffffff;		
+	background-color: #666666;		
+}
+
+.Titulo
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: silver;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.BotaoNavegacao
+{
+	font-weight: bold;
+	border-right: silver thin solid;
+	border-top: white thin solid;
+	border-left: white thin solid;
+	border-bottom: silver thin solid;
+	font-size: 9px;
+	text-transform: none;	
+	color: #ffffff;	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #606060;
+	width: 40px;
+}
